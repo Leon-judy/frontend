@@ -32,7 +32,7 @@ export default {
                     type: 'success',
                 })
                 this.$router.push({
-                    name: 'Index',
+                    name: 'Jenkins',
                 })
             })
         }

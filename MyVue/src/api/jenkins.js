@@ -10,8 +10,8 @@ const jenkins = {
     deleteJenkins(params){
         return axios.delete('/jenkins/'+params.id)
     },
-    editJenkins(){
-
+    editJenkins(params){
+        return axios.put('/jenkins/',params)
     }
 }
 
