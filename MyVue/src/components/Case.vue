@@ -1,7 +1,10 @@
 <template>
 <div style="margin: 20px">
-    <v-btn color="primary" class="d-block pa-2 white--text" @click="openDialog()">添加用例</v-btn>
-    <v-btn color="primary" class="d-block pa-2 white--text" @click="addTask = true">生成任务</v-btn>
+    <v-row>
+        <v-btn color="primary" class="d-block pa-2 white--text" @click="openDialog()">添加用例</v-btn>
+        <div class="mx-4 hidden-sm-and-down"></div>
+        <v-btn color="primary" class="d-block pa-2 white--text" @click="addTask = true">生成任务</v-btn>
+    </v-row>
     <!--生成任务对话框-->
     <v-dialog v-model="addTask" max-width="400px">
         <v-card>
